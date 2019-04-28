@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package com.webservice.client;
+package com.webservice.client.helloWord;
 
-public class HelloWorldSoapBindingStub extends org.apache.axis.client.Stub implements com.webservice.client.HelloWorld_PortType {
+public class HelloWorldSoapBindingStub extends org.apache.axis.client.Stub implements HelloWorld_PortType {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();

@@ -1,7 +1,7 @@
 package example;
 
-import com.webservice.client.HelloWorldServiceLocator;
-import com.webservice.client.HelloWorld_PortType;
+import com.webservice.client.helloWord.HelloWorldServiceLocator;
+import com.webservice.client.helloWord.HelloWorld_PortType;
 
 import javax.xml.rpc.ServiceException;
 import java.rmi.RemoteException;
@@ -17,9 +17,7 @@ public class Test {
             HelloWorld_PortType service = locator.getHelloWorld();
             String result = service.sayHelloWorldFrom("你好的三大");
             System.out.println(result);
-        } catch (ServiceException e) {
-            e.printStackTrace();
-        } catch (RemoteException e) {
+        } catch (ServiceException | RemoteException e) {
             e.printStackTrace();
         }
     }
